@@ -1,3 +1,4 @@
-from functions.download import download_data
+from functions.plot import plot_history
 
-download_data('AAPL', False)
+plot_history('AAPL')
+
