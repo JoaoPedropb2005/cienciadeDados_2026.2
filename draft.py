@@ -1,4 +1,9 @@
-from functions.plot import plot_history
+from functions.white_noise import white_noise
+import plotly.express as px
 
-plot_history('AAPL')
+time, values = white_noise(seed = 100)
 
+px.line(
+    x = time,
+    y = values
+)
